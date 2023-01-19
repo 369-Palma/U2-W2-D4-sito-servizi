@@ -8,6 +8,7 @@ nav {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
+  position: sticky;
 }
 .logo {
   width: 50px;
@@ -38,8 +39,8 @@ nav {
     }
   }
 }
-
-#spaceholder {
+select {
   text-align: center;
-  font-size: 2em;
+  text-transform: uppercase;
+  font-size: 1em;
 }
