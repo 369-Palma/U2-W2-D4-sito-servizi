@@ -1,6 +1,6 @@
 @import "reset";
+
 @import "variables";
-@import "colors";
 
 nav {
   background-color: $colore-sfondo;
@@ -43,4 +43,25 @@ select {
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
+}
+
+@mixin customBox($size, $fontFamily) {
+  font: {
+    size: $size;
+    -family: $fontFamily;
+  }
+}
+
+.card {
+  width: 80%;
+  border: $bordo;
+  display: flex;
+
+  img {
+  }
+  .testo p {
+    @include customBox(20px, "Josefin Sans");
+    padding: 10px;
+    align-self: center;
+  }
 }
