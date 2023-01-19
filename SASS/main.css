@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+nav {
+  background-color: rgb(5, 67, 5);
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-self: center;
+}
+
+.seleziona, .menu li {
+  border: 1px solid rgb(145, 188, 38);
+  color: rgb(145, 188, 38);
+  background-color: rgb(5, 67, 5);
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+.menu li {
+  padding-bottom: 15px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.menu li :hover {
+  transform: scale(2);
+}
+@media screen and (min-width: 576px) {
+  .menu li {
+    display: inline;
+  }
+}
+
+#spaceholder {
+  text-align: center;
+  font-size: 2em;
+}/*# sourceMappingURL=main.css.map */

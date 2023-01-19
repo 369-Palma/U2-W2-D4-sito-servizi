@@ -1,0 +1,45 @@
+@import "reset";
+@import "variables";
+@import "colors";
+
+nav {
+  background-color: $colore-sfondo;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  align-self: center;
+}
+.seleziona {
+  border: 1px solid $colore-secondario;
+  color: $colore-secondario;
+  background-color: $colore-sfondo;
+}
+.menu {
+  list-style-type: none;
+  padding: 0;
+  li {
+    @extend .seleziona;
+    padding-bottom: 15px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    & :hover {
+      transform: scale(2);
+    }
+    @media screen and (min-width: 576px) {
+      display: inline;
+    }
+  }
+}
+
+#spaceholder {
+  text-align: center;
+  font-size: 2em;
+}
